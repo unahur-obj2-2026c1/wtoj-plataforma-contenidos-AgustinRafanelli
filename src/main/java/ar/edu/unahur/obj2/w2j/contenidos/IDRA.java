@@ -3,7 +3,7 @@ package ar.edu.unahur.obj2.w2j.contenidos;
 public class IDRA {
 	//-------- Singleton ---------
   	private static IDRA instance = new IDRA();
-    private static Double valor = 0.5;
+    private Double valor = 0.5;
 
     private IDRA() {}
     
@@ -15,7 +15,7 @@ public class IDRA {
         return valor;
     }
 
-    public void setCanonIdra(Double nuevoValor) {
-        valor = nuevoValor;
+    public void setValor(Double valor) {
+        this.valor = valor;
     }
 }

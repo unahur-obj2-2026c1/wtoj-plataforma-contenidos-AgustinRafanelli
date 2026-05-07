@@ -20,11 +20,12 @@ public abstract class Contenido {
     public void setCosto(Double costoBase) {
         this.costoBase = costoBase;
     }
+
     //---------- Template Method ----------
     public Double costo() {
         return costoBase + this.doCosto();
     }
-
+        //Hook del template method
     public abstract Double doCosto();
     //-------------------------------------
 }
